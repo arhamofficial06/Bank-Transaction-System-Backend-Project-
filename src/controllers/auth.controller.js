@@ -13,7 +13,7 @@ async function userRegisterController(req, res) {
 
   if (isExists) {
     return res.status(422).json({
-      message: "User already exists with this email.",
+      message: "User already exists with this email",
       status: "failed",
     });
   }
@@ -61,7 +61,7 @@ async function userLoginController(req, res) {
 
   if (!isValidPassword) {
     return res.status(401).json({
-      message: "Email or Password is INVALID.",
+      message: "Email or Password is INVALID",
     });
   }
 

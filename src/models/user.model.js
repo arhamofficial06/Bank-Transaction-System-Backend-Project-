@@ -5,7 +5,7 @@ const userSchema = new mongoose.Schema(
   {
     email: {
       type: String,
-      required: [true, "Email is required for creating a user."],
+      required: [true, "Email is required for creating a user"],
       trim: true,
       lowercase: true,
       match: [
@@ -16,12 +16,12 @@ const userSchema = new mongoose.Schema(
     },
     name: {
       type: String,
-      required: [true, "Name is required for creating an account."],
+      required: [true, "Name is required for creating an account"],
     },
     password: {
       type: String,
-      required: [true, "Password is required for creating an account."],
-      minlength: [6, "Password should contain more than 6 characters."],
+      required: [true, "Password is required for creating an account"],
+      minlength: [6, "Password should contain more than 6 characters"],
       select: false,
     },
   },
