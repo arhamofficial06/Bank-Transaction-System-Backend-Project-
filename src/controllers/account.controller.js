@@ -14,6 +14,8 @@ async function getUserAccountsController(req, res) {
     res.status(200).json({ accounts });
 }
 
+
+
 async function getAccountBalanceController(req, res) {
     const { accountId } = req.params;
 
